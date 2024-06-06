@@ -1,0 +1,20 @@
+@import 'vaiable';
+
+
+/* while loop */
+ $i:10;
+
+ @while $i <= 30{
+    .pad-#{$i}{
+        padding-left :1px * $i;
+    }
+    $i : $i+10;
+}
+
+
+/* for loop */
+@for $i from 1 through 10{
+    .box-#{$i}{
+        border:10px*$i;
+    }
+}

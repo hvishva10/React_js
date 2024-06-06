@@ -1,0 +1,66 @@
+.one{
+    height: 400px;
+    width: 600px;
+    background-color: gray;
+    padding-top: 40px;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+
+.two{
+    height: 300px;
+    width:500px;  
+    background-color: white; 
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 70px;
+    /* padding-top: 30px; */
+    /* margin-top: 200px; */
+}
+
+.three{
+    /* height: 30px;
+    width: 30px; */
+    /* margin-left: 250px; */
+    /* margin-top: 50px; */
+    /* position: absolute; */
+    color: red;
+    /* text-align: center; */
+    margin-left: 17px;
+    margin-top: 15px;
+}
+
+.four{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    /* position: relative; */
+    /* text-align: center; */
+    /* margin-left: 250px;
+    margin-top: 50px; */
+    margin-left: 100px;
+    margin: auto;
+    /* padding-top: 200px; */
+    
+    /* margin-top: 200px; */
+    /* height: ; */
+
+
+}
+
+b{
+    margin-left: 180px;
+}
+
+p{
+    margin-left: 40px;
+}
+
+button{
+    margin-left: 150px;
+}
+
+.five{
+    margin-left: -1px;
+}

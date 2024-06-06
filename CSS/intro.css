@@ -1,0 +1,10 @@
+.external{
+    color: rebeccapurple;
+}
+
+/*cascade , specificity , inheritance */
+.section-1 .para1 {
+     color: blueviolet;
+     background-color: aqua;
+}
+

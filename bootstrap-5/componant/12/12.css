@@ -1,0 +1,57 @@
+.one{
+    height: 550px;
+    width: 900px;
+    background-color: rgb(184, 221, 235);
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.two{
+    height: 530px;
+    width: 890px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    /* margin-top: 50px; */
+    padding-top: 10px;  
+}
+
+p{
+    color: blue;
+}
+
+.col-5{
+    height:90px;
+    width: 410px;
+    background-color: white;
+    box-shadow: 35px 35px 40px whitesmoke;
+    border-radius: 10px;
+}
+
+.four{
+    height:90px;
+    width: 430px;
+    background-color: white;
+    box-shadow: 35px 35px 40px whitesmoke;
+    border-radius: 10px;   
+}
+
+.five{
+    height:90px;
+    width: 430px;
+    background-color: white;
+    box-shadow: 35px 35px 55px whitesmoke;
+    border-radius: 10px;
+    margin-top: 8px;
+
+}
+
+.six{
+    height:90px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 45px 45px 25px whitesmoke;
+    border-radius: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+a:nth-child(3n+1){
+    background-color: aqua;
+    color: blue;
+}  /* 1,2 */
+
+h1:nth-last-child(22){
+    background-color: aqua;
+    color: blue;
+} /*  3  */
+
+h1:nth-child(6){
+    background-color: aqua;
+    color: blue;
+}  /*  4  */
+
+input:nth-child(9){
+    background-color: aqua;
+    color: blue;
+}  /*  5  */
+
+h1:only-of-type{
+    background-color: aqua;
+    color: blue;
+} /*  6,7,8,9  */
+
+div:nth-child(12) h1:nth-child(1){
+    background-color: aqua;
+    color: blue; 
+}   /*  10 */
+
+div:nth-child(12) h1:nth-child(2){
+    background-color: aqua;
+    color: blue;
+} /* 11 */
+
+h1:nth-child(13){
+    background-color: aqua;
+    color: blue;
+}  /* 12 */
+
+h1:nth-child(14){
+    background-color: aqua;
+    color: blue;
+}  /* 13 */
+
+p:only-child{
+    background-color: aqua;
+    color: blue;
+}  /* 14  */
+
+p:nth-child(2){
+    background-color: aqua;
+    color: blue;
+}  /* 15 */
+
+div div  div h1:nth-child(1){
+    background-color: aqua;
+    color: blue;
+} /*  16 */
+
+div div div h1:nth-child(4){
+    background-color: aqua;
+    color: blue;
+} /* 17 */
+
+span h1:last-child{
+    background-color: aqua;
+    color: blue;
+}  /* 18 */
+
+div:nth-child(18) div h1:first-child{
+    background-color: aqua;
+    color: blue;
+}/* 19 */
+
+h1:nth-child(19){
+    background-color: aqua;
+    color: blue;
+}  /*  20  */
+
+h1:nth-child(22){
+    background-color: aqua;
+    color: blue;
+} /*  21  */
+
+
+
+
+

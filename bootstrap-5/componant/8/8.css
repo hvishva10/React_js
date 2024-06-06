@@ -1,0 +1,22 @@
+.one{
+    height: 400px;
+    width: 350px;
+    background-color: skyblue;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 140px;
+    
+}
+
+.two{
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: .25em;
+}
