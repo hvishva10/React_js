@@ -1,0 +1,49 @@
+{
+  "User": [
+    {
+      "id": "e4e7",
+      "firstname": "srushti",
+      "lastname": "bhanderi",
+      "age": "20",
+      "profession": "web",
+      "number": "1234567891",
+      "image": null
+    },
+    {
+      "id": "64b4",
+      "firstname": "jasmi",
+      "lastname": "mulani",
+      "age": "19",
+      "profession": "devloper",
+      "number": "1234567891",
+      "image": null
+    },
+    {
+      "id": "3db2",
+      "firstname": "ashiti",
+      "lastname": "dhanani",
+      "age": "20",
+      "profession": "devloper",
+      "number": "9999999999",
+      "image": null
+    },
+    {
+      "id": "7a78",
+      "firstname": "vishava",
+      "lastname": "hirpara",
+      "age": "20",
+      "profession": "dev",
+      "number": "9904158570",
+      "image": null
+    },
+    {
+      "id": "4c56",
+      "firstname": "Isha",
+      "lastname": "asdfgh",
+      "age": "20",
+      "profession": "web",
+      "number": "9904158570",
+      "image": null
+    }
+  ]
+}

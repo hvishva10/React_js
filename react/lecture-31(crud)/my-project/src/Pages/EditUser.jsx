@@ -21,18 +21,20 @@ const EditUser = () => {
 
   const loadUserWithId = async() => {
     const res = await axios.get(`http://localhost:3000/User/${id}`)
-    setUser(res.user)
+    setUser(res.data)
+    console.log(res)
   }
+  
+  useEffect(() => {
+    loadUserWithId();
+  } ,[] )
 
-  const onSubmitEditUser = async() => {
+  const onSubmitEditUser = async(e) => {
     e.preventDefault();
     await axios.put(`http://localhost:3000/User/${id}`,user)
     navigate('/')
   }
 
-  useEffect(() => {
-    loadUserWithId();
-  })
 
   // const formik = useFormik({
   //   initialValues: {
@@ -71,9 +73,10 @@ const EditUser = () => {
           <input
             type="text"
             id="firstname"
+            name='firstname'
             value={user.firstname}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, firstname: e.target.value })}
+            onChange={(e) => setUser({ ...user, firstname: e.target.value })}
           />
              {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
@@ -89,6 +92,7 @@ const EditUser = () => {
             type="text"
             id="lastname"
             value={user.lastname}
+            name='lastname'
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             onChange={(e) => setUser({...user , lastname:e.target.value})}
           />
@@ -105,6 +109,7 @@ const EditUser = () => {
           <input
             type="number"
             id="age"
+            name='age'
             value={user.age}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             onChange={(e) => setUser({...user , age:e.target.value})}
@@ -122,6 +127,7 @@ const EditUser = () => {
           <input
             type="text"
             id="profession"
+            name='profession'
             value={user.profession}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             onChange={(e) => setUser({...user , profession:e.target.value})}
@@ -142,6 +148,7 @@ const EditUser = () => {
             type="tel"
             id="mobile"
             value={user.number}
+            name='mobile'
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             onChange={(e) => setUser({...user , number:e.target.value})}
           />
@@ -151,6 +158,7 @@ const EditUser = () => {
           ) : null} */}
         </div>
         
+
         <button
           type="submit"
           className=" bg-gray-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
