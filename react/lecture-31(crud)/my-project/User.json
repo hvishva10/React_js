@@ -26,24 +26,6 @@
       "profession": "devloper",
       "number": "9999999999",
       "image": null
-    },
-    {
-      "id": "7a78",
-      "firstname": "vishava",
-      "lastname": "hirpara",
-      "age": "20",
-      "profession": "dev",
-      "number": "9904158570",
-      "image": null
-    },
-    {
-      "id": "4c56",
-      "firstname": "Isha",
-      "lastname": "asdfgh",
-      "age": "20",
-      "profession": "web",
-      "number": "9904158570",
-      "image": null
     }
   ]
 }
