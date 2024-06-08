@@ -19,8 +19,8 @@ function App() {
           <Route path="add" element={<Add />} />
           <Route path="/EditUser/:id" element={<EditUser />} />
           <Route path="/*" element={<Error />} />
-          <div className="0owserRouter">
-          </div>
+          {/* <div className="0owserRouter">
+          </div> */}
         </Routes>
       </BrowserRouter>
     </>
