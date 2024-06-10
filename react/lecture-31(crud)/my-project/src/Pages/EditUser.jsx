@@ -1,37 +1,37 @@
 import React from 'react';
 // import { useFormik } from 'formik';
 // import * as Yup from 'yup';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useNavigate, useParams } from 'react-router-dom';
-import { useState ,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const EditUser = () => {
-  const navigate  = useNavigate()
+  const navigate = useNavigate()
 
-  const {id} = useParams()
- 
-  const [user , setUser]  = useState({
-      firstname:'',
-      lastname:'',
-      age:'',
-      profession:'',
-      number:''
+  const { id } = useParams()
+
+  const [user, setUser] = useState({
+    firstname: '',
+    lastname: '',
+    age: '',
+    profession: '',
+    number: ''
   })
 
-  const loadUserWithId = async() => {
+  const loadUserWithId = async () => {
     const res = await axios.get(`http://localhost:3000/User/${id}`)
     setUser(res.data)
     console.log(res)
   }
-  
+
   useEffect(() => {
     loadUserWithId();
-  } ,[] )
+  }, [])
 
-  const onSubmitEditUser = async(e) => {
+  const onSubmitEditUser = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:3000/User/${id}`,user)
+    await axios.put(`http://localhost:3000/User/${id}`, user)
     navigate('/')
   }
 
@@ -65,7 +65,7 @@ const EditUser = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <form className="bg-white p-6 rounded shadow-md w-full max-w-sm" onSubmit={onSubmitEditUser}>
         <h1 className="text-2xl font-bold mb-4 text-center">Edit User</h1>
-        
+
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstname">
             First Name
@@ -78,12 +78,12 @@ const EditUser = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             onChange={(e) => setUser({ ...user, firstname: e.target.value })}
           />
-             {/* {...formik.getFieldProps('firstname')} */}
+          {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
             <div className="text-red-500 text-sm">{formik.errors.firstname}</div>
           ) : null} */}
         </div>
-        
+
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="lastname">
             Last Name
@@ -94,9 +94,9 @@ const EditUser = () => {
             value={user.lastname}
             name='lastname'
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setUser({...user , lastname:e.target.value})}
+            onChange={(e) => setUser({ ...user, lastname: e.target.value })}
           />
-             {/* {...formik.getFieldProps('lastname')} */}
+          {/* {...formik.getFieldProps('lastname')} */}
           {/* {formik.touched.lastname && formik.errors.lastname ? (
             <div className="text-red-500 text-sm">{formik.errors.lastname}</div>
           ) : null} */}
@@ -112,14 +112,14 @@ const EditUser = () => {
             name='age'
             value={user.age}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setUser({...user , age:e.target.value})}
+            onChange={(e) => setUser({ ...user, age: e.target.value })}
           />
-             {/* {...formik.getFieldProps('age')} */}
+          {/* {...formik.getFieldProps('age')} */}
           {/* {formik.touched.age && formik.errors.age ? (
             <div className="text-red-500 text-sm">{formik.errors.age}</div>
           ) : null} */}
         </div>
-        
+
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="profession">
             Profession
@@ -130,16 +130,16 @@ const EditUser = () => {
             name='profession'
             value={user.profession}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setUser({...user , profession:e.target.value})}
+            onChange={(e) => setUser({ ...user, profession: e.target.value })}
           />
-            {/* {...formik.getFieldProps('profession')} */}
+          {/* {...formik.getFieldProps('profession')} */}
           {/* {formik.touched.profession && formik.errors.profession ? (
             <div className="text-red-500 text-sm">{formik.errors.profession}</div>
           ) : null} */}
         </div>
-        
-       
-        
+
+
+
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="mobile">
             Mobile Number
@@ -150,14 +150,14 @@ const EditUser = () => {
             value={user.number}
             name='mobile'
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setUser({...user , number:e.target.value})}
+            onChange={(e) => setUser({ ...user, number: e.target.value })}
           />
-           {/* {...formik.getFieldProps('mobile')} */}
+          {/* {...formik.getFieldProps('mobile')} */}
           {/* {formik.touched.mobile && formik.errors.mobile ? (
             <div className="text-red-500 text-sm">{formik.errors.mobile}</div>
           ) : null} */}
         </div>
-        
+
 
         <button
           type="submit"

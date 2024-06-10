@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
             <div className='col flex justify-center max-sm:py-1'>
               <div className='flex'>
-              <span className="text-base text-gray-500">Designed by:<span className="font-bold">srushti</span></span>
+              <span className="text-base text-gray-500">Designed by:<span className="font-bold">vishva</span></span>
               </div>
             </div>
             <div className="col flex justify-end max-sm:justify-center max-sm:py-1 ">

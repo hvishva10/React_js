@@ -14,6 +14,7 @@ const Error = () => {
       <Link to='/contact'>
         <button className=' bg-black text-white hover:bg-green-500   py-[10px] px-[50px]'>Contact</button>
       </Link>
+
     </div>
   )
 }

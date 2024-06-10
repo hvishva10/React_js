@@ -81,7 +81,7 @@ const Add = () => {
             type="text"
             id="firstname"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, firstname:e.target.value })}
+            onChange={(e) => setuser({ ...user, firstname: e.target.value })}
           />
           {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
@@ -96,7 +96,7 @@ const Add = () => {
             type="text"
             id="lastname"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, lastname:e.target.value })}
+            onChange={(e) => setuser({ ...user, lastname: e.target.value })}
           />
           {/* {...formik.getFieldProps('lastname')} */}
           {/* {formik.touched.lastname && formik.errors.lastname ? (
@@ -111,7 +111,7 @@ const Add = () => {
             type="number"
             id="age"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, age:e.target.value })}
+            onChange={(e) => setuser({ ...user, age: e.target.value })}
           />
           {/* {...formik.getFieldProps('age')} */}
           {/* {formik.touched.age && formik.errors.age ? (
@@ -126,7 +126,7 @@ const Add = () => {
             type="text"
             id="profession"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, profession:e.target.value })}
+            onChange={(e) => setuser({ ...user, profession: e.target.value })}
           />
           {/* {...formik.getFieldProps('profession')} */}
           {/* {formik.touched.profession && formik.errors.profession ? (
@@ -141,7 +141,7 @@ const Add = () => {
             type="tel"
             id="mobile"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setuser({ ...user, number:e.target.value })}
+            onChange={(e) => setuser({ ...user, number: e.target.value })}
           />
           {/* {...formik.getFieldProps('mobile')} */}
           {/* {formik.touched.mobile && formik.errors.mobile ? (

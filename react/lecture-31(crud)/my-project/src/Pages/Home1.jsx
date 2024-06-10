@@ -198,7 +198,7 @@ export function Home1() {
         </Link>
 
         {
-          Array.from({length: totalpages}, (_, i) => (
+          Array.from({ length: totalpages }, (_, i) => (
             <NavLink className={`mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white`} style={{
               backgroundColor: currentPage == i + 1 ? 'black' : 'transparent', color: currentPage == i + 1 ? 'white' : 'inherit'
             }}>
