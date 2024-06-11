@@ -1,0 +1,16 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+form{
+    border: 2px solid black;
+    text-align: center;
+    height:500px ;
+    width:700px ;
+}
+
+.side-2{
+    display: inline-block;
+    text-align: left;
+}

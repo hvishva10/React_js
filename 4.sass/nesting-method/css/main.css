@@ -1,0 +1,15 @@
+.box-1 {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(156, 10, 240);
+}
+.box-1 .box-2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(26, 176, 176);
+}
+.box-1 .box-2 .box-3 {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}/*# sourceMappingURL=main.css.map */

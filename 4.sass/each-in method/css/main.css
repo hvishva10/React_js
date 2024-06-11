@@ -1,0 +1,64 @@
+/* @each and in method */
+.main {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-3 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-1 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-2 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.main {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-3 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-1 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-2 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.box-3 {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.split {
+  border: 1px solid rgb(251, 96, 96);
+}
+
+.main {
+  border: red;
+  height: 100px;
+  left: 10px;
+}
+
+.para {
+  border: purple;
+  height: 200px;
+  left: 20px;
+}
+
+.box {
+  border: red;
+  height: 100px;
+  left: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

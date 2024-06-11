@@ -1,0 +1,12 @@
+body{
+   background-color: blue;
+}
+.account{
+    height: 300px;
+    width: 550px;
+    border: 2px solid whitesmoke;
+    margin: auto;
+    margin-top: 130px;
+    border-radius: 10px;
+    text-align: center;
+}
