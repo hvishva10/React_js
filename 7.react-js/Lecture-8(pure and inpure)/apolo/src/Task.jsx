@@ -18,7 +18,7 @@ const Chocolate = () => {
         <div>
           <h1> chocolate recipe</h1>
           <h2> for one</h2>
-          <Recipe food={4}/>
+          <Recipe food={3}/>
         </div>
       )
 }
